@@ -1,0 +1,54 @@
+#dbdata:
+#  image: postgres:9.3.9
+#  volumes:
+#    - /var/lib/postgresql/data
+#  command: "true"
+#
+#db:
+#  image: postgres:9.3.9
+#  volumes_from:
+#    - dbdata
+#  ports:
+#    - "5432:5432"
+#  environment:
+#    POSTGRES_USER: postgres
+#    POSTGRES_PASSWORD: 261523
+#
+#app:
+#  build: .
+#  volumes:
+#    - /apps/sef:/home/app/webapp
+#  volumes_from:
+#    - bundledata
+#  ports:
+#    - "80:80"
+#    - "3000:3000"
+#  links:
+#    - db:sef-db-dev
+#    - es:sef-es-dev
+#  environment:
+#    sef_DB_DEV: sef_development
+#    sef_DB_DEV_SERVICE_HOST: sef-db-dev
+#    sef_DB_DEV_SERVICE_PORT: 5432
+#    sef_DB_TEST: sef_test
+#    sef_DB_TEST_SERVICE_HOST: sef-db-dev
+#    sef_DB_TEST_SERVICE_PORT: 5432
+#    POSTGRES_USER: postgres
+#    POSTGRES_PASSWORD: 261523
+#    PGPASSWORD: 261523
+
+dbdata:
+  image: postgres:9.4.10
+  volumes:
+    - /var/lib/postgresql/data
+  command: "true"
+
+db:
+  image: postgres:9.4.10
+  volumes_from:
+    - dbdata
+  ports:
+    - "5432:5432"
+  environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: 261523
