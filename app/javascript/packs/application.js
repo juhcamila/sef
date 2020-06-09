@@ -5,6 +5,13 @@
 
 require("@rails/ujs").start();
 require("@rails/activestorage").start();
+window.jQuery = window.$ = require("jquery/dist/jquery");
+require("bootstrap/dist/js/bootstrap")
+require("fastclick/lib/fastclick");
+require("nprogress/nprogress");
+require("malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar");
+window.smartresize = require("packs/smartresize");
+require("packs/custom");
 require("channels");
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
