@@ -28,13 +28,13 @@ __Example__
 
 ```js
 var zip = new JSZip();
-zip.folder("home/Pierre/videos");
-zip.folder("home/Pierre/photos");
-zip.folder("home/Jean/videos");
-zip.folder("home/Jean/photos");
+zip.folder(homes);
+zip.folder(homes);
+zip.folder(homes);
+zip.folder(homes);
 
 zip.folder(/videos/); // array of size 2
 
-zip.folder("home/Jean").folder(/^vid/); // array of 1
+zip.folder(homes).folder(/^vid/); // array of 1
 ```
 

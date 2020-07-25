@@ -543,7 +543,7 @@ $.extend( KeyTable.prototype, {
 				break;
 
 			case 35: // end (end of current page)
-			case 36: // home (start of current page)
+			case 36: // homes (start of current page)
 				e.preventDefault();
 				var indexes = dt.cells( {page: 'current'} ).indexes();
 

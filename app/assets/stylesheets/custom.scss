@@ -1,5 +1,5 @@
 .left_col {
-  background: #2A3F54;
+  background: #01ABAA;
 }
 .nav-sm .container.body .col-md-3.left_col {
   min-height: 100%;
@@ -210,7 +210,7 @@ body .container.body .right_col {
 .nav_title {
   width: 230px;
   float: left;
-  background: #2A3F54;
+  background: #01ABAA;
   border-radius: 0;
   height: 57px;
 }
@@ -336,7 +336,7 @@ body .container.body .right_col {
 }
 body {
   color: #73879C;
-  background: #2A3F54;
+  background: #01ABAA;
   font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -581,10 +581,10 @@ a:hover, a:focus {
 .nav.side-menu> li.active > a {
   text-shadow: rgba(0, 0, 0, 0.25) 0 -1px 0;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5b6479), color-stop(100%, #4c5566)), #686e78;
-  background: -webkit-linear-gradient(#334556, #2C4257), #2A3F54;
-  background: -moz-linear-gradient(#334556, #2C4257), #2A3F54;
-  background: -o-linear-gradient(#334556, #2C4257), #2A3F54;
-  background: linear-gradient(#334556, #2C4257), #2A3F54;
+  background: -webkit-linear-gradient(#334556, #2C4257), #01ABAA;
+  background: -moz-linear-gradient(#334556, #2C4257), #01ABAA;
+  background: -o-linear-gradient(#334556, #2C4257), #01ABAA;
+  background: linear-gradient(#334556, #2C4257), #01ABAA;
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
   -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
   box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
@@ -982,6 +982,30 @@ legend {
 
 
 /* *********  dashboard widget  **************************** */
+
+.form_wrapper {
+  background-image: url("/assets/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.total_form {
+  width: 400px;
+}
+
+@media all and ( max-width: 600px){
+  .total_form {
+    width: 90%;
+  }
+
+  .login_content {
+    min-width: unset !important;
+  }
+}
 
 table.tile h3, table.tile h4, table.tile span {
   font-weight: bold;
@@ -1536,7 +1560,7 @@ span.right {
   padding: 5px 0 0 0;
   position: fixed;
   width: 230px;
-  background: #2A3F54;
+  background: #01ABAA;
 }
 .sidebar-footer a {
   padding: 7px 0 3px;
@@ -3405,7 +3429,7 @@ ul.project_files li a i {
 
 /** login **/
 .login {
-  background:#F7F7F7;
+  background: #00BFFF;
 }
 .login .fa-paw {
   font-size: 26px;
@@ -3417,7 +3441,7 @@ a.hiddenanchor {
   right: 0px;
   margin: 0px auto;
   margin-top: 5%;
-  max-width: 350px;
+  max-width: 400px;
   position: relative;
 }
 .registration_form, .login_form {
@@ -4344,3 +4368,7 @@ ul.notifications {
   border: 1px solid #e5e5e5;
 }
 /** /Dropzone.js **/
+
+.form-control {
+  height: 38px !important;
+}

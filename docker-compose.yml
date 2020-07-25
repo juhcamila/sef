@@ -17,7 +17,7 @@
 #app:
 #  build: .
 #  volumes:
-#    - /apps/sef:/home/app/webapp
+#    - /apps/sef:/homes/app/webapp
 #  volumes_from:
 #    - bundledata
 #  ports:
