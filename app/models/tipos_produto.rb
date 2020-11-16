@@ -1,2 +1,0 @@
-class TiposProduto < ApplicationRecord
-end

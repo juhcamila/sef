@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :tipos_produtos
+  resources :categories
   devise_for :users, controllers: {
       sessions: 'users/sessions'
   }
